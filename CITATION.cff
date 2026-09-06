@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata below."
+
+title: "CCC Structural Folding Runtime: Metric Clustering, Structural Merge, and Runtime Localization"
+
+type: software
+
+authors:
+
+* family-names: "Tan"
+  given-names: "Sizhe"
+
+version: "1.0.0"
+
+date-released: "2026-09-04"
+
+url: "https://github.com/sizhet/CCC-Structural-Folding-Runtime-CSFR"
+
+repository-code: "https://github.com/sizhet/CCC-Structural-Folding-Runtime-CSFR"
+
+license: "Apache-2.0"
+
+abstract: >-
+CCC Structural Folding Runtime (CSFR) is a general structural runtime
+framework for transforming metric-space object collections into folded
+Compressed Computational Cognition (CCC) structures that support runtime
+dispatch, structural localization, and localized intelligence. CSFR
+distinguishes object-to-object distance (D_PP), object-to-CCC distance
+(D_PC), and CCC-to-CCC distance (D_CC); introduces policy-compressed
+Cluster CCCs and aligned Sequence Claw-Dragon Merge; and extends runtime
+search through CCC DNA, reverse structural indexing, Two-Way CCC, and
+Two-Phase Structural Search. The canonical runtime progression is:
+Metric -> Cluster -> Merge -> CCC -> DNA -> Retrieve -> Verify ->
+Localization.
+
+keywords:
+
+* "CCC Structural Folding Runtime"
+* "CSFR"
+* "Structural Intelligence"
+* "Structural Folding"
+* "CCC"
+* "Cluster CCC"
+* "Structural Localization"
+* "Metric-Space Clustering"
+* "Claw-Dragon Merge"
+* "Composite Structural Distance"
+* "Object-to-Object Distance"
+* "Object-to-CCC Distance"
+* "CCC-to-CCC Distance"
+* "CCC DNA"
+* "Two-Way CCC"
+* "Two-Phase Structural Search"
+* "Per-Node Intelligence"
+* "Runtime Structural Intelligence"
+* "Structural Runtime"
+* "DBM-SI"
