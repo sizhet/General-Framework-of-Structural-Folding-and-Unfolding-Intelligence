@@ -620,7 +620,6 @@ $$
 
 $$
 Identity_B =
-=
 Core + Context_B + \Delta_B
 $$
 
