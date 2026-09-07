@@ -1067,8 +1067,7 @@ GFSFUI does **not** require every object, query, or candidate to be forced into 
 At major structural stages, the runtime may preserve an explicit **Leftover** branch for noise, uncertainty, outliers, novelty, insufficient evidence, or deferred processing:
 
 $$
-X
-=
+X =
 Folded(X)
 \cup
 Leftover(X)
