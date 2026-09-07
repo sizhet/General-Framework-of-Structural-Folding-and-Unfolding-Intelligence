@@ -1058,7 +1058,57 @@ GFSFUI is a general research framework designed to make these questions more exp
 
 ---
 
-# 37. The Research Thesis
+# 37. Explicit Leftover and Policy Governance
+
+GFSFUI does **not** require every object, query, or candidate to be forced into an existing structural branch.
+
+At major structural stages, the runtime may preserve an explicit **Leftover** branch for noise, uncertainty, outliers, novelty, insufficient evidence, or deferred processing:
+
+$$
+X
+=
+Folded(X)
+\cup
+Leftover(X)
+$$
+
+Leftover is therefore not necessarily failure. It may represent the current boundary of reliable structural coverage and provide future material for Difference discovery, new branches, new CCCs, and structural growth.
+
+GFSFUI also distinguishes structural evidence from runtime action:
+
+$$
+\boxed{
+Structural\ Evidence
+\neq
+Policy
+\neq
+Decision
+}
+$$
+
+Structural intelligence defines the available possibility space. Policy governs acceptance thresholds, search width, unfolding budgets, validation requirements, escalation, Leftover handling, and structural-growth decisions.
+
+Together:
+
+$$
+\boxed{
+Structural\ Space
++
+Leftover\ Space
++
+Policy\ Space
+}
+$$
+
+provide a more realistic foundation for controllable Fold/Unfold intelligence.
+
+For the full treatment, see:
+
+**GFSFUI-008 — Explicit Leftover and Policy-Governed Structural Runtime**
+
+---
+
+# 38. The Research Thesis
 
 The broad thesis is:
 
@@ -1076,7 +1126,7 @@ Refolding turns the result into future intelligence.
 
 ---
 
-# 38. Canonical Summary
+# 39. Canonical Summary
 
 > **GenericContainerStarmap provides the structuralization boundary.**
 
