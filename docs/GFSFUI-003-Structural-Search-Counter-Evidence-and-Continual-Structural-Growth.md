@@ -235,6 +235,12 @@ Thus:
 
 ---
 
+![Fig-003 — Structural Search Plane and Counter-Evidence](../figures/Fig-003-Structural-Search-Plane-and-Counter-Evidence.png)
+
+*Fig-003 — Structural Search Plane and Counter-Evidence. Structural Search moves across Folded representations and explicitly searches both supporting and contradicting evidence. Counter-evidence can expose structural Delta rather than merely reduce a score.*
+
+---
+
 # 5. Two-Way Structural Search
 
 Many relations in structural memory should be searchable in both directions.
