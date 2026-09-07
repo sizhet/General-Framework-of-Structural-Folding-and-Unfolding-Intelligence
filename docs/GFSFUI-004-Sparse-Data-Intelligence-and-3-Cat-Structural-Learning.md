@@ -729,6 +729,12 @@ Thus sparse learning naturally becomes continual structural learning.
 
 ---
 
+![Fig-004 — 3-Cat Learning and Local Structural Growth](../figures/Fig-004-3-Cat-Learning-and-Local-Structural-Growth.png)
+
+*Fig-004 — 3-Cat Learning and Local Structural Growth. A small number of high-information examples can initiate a Candidate Fold, which is then searched, challenged, refined, and expanded through persistent Delta and localized structural growth.*
+
+---
+
 # 26. From Candidate Delta to Persistent Delta
 
 A single contradiction may be noise.
