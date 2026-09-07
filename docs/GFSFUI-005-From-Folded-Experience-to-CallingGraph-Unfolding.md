@@ -164,6 +164,12 @@ This is the first major shift:
 
 ---
 
+![Fig-005 — CallingGraph Fold–Unfold Closed Loop](../figures/Fig-005-CallingGraph-Fold-Unfold-Closed-Loop.png)
+
+*Fig-005 — CallingGraph Fold–Unfold Closed Loop. Certified program experience is Folded into reusable CallingGraph structural memory, searched and Unfolded toward new goals, validated through execution and counter-evidence, and returned as new structural experience through Refolding.*
+
+---
+
 # 5. Certified CallingGraph Population
 
 Not every historical program should contribute equally to trusted structural memory.
