@@ -155,6 +155,12 @@ UNFOLD / CERTIFY / REFOLD
 
 ---
 
+![Fig-007 — Three Canonical Demonstrations and DOI Triangle](../figures/Fig-007-Three-Canonical-Demonstrations-and-DOI-Triangle.png)
+
+*Fig-007 — Three Canonical Demonstrations and DOI Triangle. Stock demonstrates Structural Folding, Biomedical demonstrates Structural Search, Falsification, and Growth, and CallingGraph demonstrates Structural Unfolding and Generation. SMSF, CSFR, and GFSFUI form a complementary research triangle of concrete application, reusable mechanism, and general framework.*
+
+---
+
 # 4. Canonical Demonstration I — Stock Market Structural Folding
 
 The stock-market domain provides a direct and intuitive demonstration of population-level Folding.

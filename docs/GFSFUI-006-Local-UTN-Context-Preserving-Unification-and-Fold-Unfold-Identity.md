@@ -831,6 +831,12 @@ L1 and L2 may already be sufficient.
 
 ---
 
+![Fig-006 — Local UTN to Evolving Universal Identity](../figures/Fig-006-Local-UTN-to-Evolving-Universal-Identity.png)
+
+*Fig-006 — Local UTN to Evolving Universal Identity. Local identities are preserved and normalized first, then progressively compared, challenged, validated, and promoted toward broader structural identities through Fold-Guided UTN Evolution.*
+
+---
+
 # 28. L0 — Raw Identity
 
 Examples:
