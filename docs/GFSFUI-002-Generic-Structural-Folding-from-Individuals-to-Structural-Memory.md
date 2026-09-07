@@ -32,8 +32,7 @@ The framework is intentionally domain-general. It does not require one metric, o
 Many intelligent systems begin with a population:
 
 $$
-\mathcal{X}
-=
+\mathcal{X}=
 \{x_1,x_2,\ldots,x_N\}
 $$
 
@@ -412,8 +411,7 @@ $$
 The system may construct a local neighborhood:
 
 $$
-\mathcal{N}
-=
+\mathcal{N}=
 \{S_1,S_2,\ldots,S_k\}
 $$
 
@@ -444,8 +442,7 @@ The Cluster-Central CCC represents the reusable structural center of a neighborh
 Conceptually:
 
 $$
-CCC(\mathcal{N})
-=
+CCC(\mathcal{N})=
 \text{StructuralCenter}
 (
 S_1,\ldots,S_k
@@ -671,8 +668,7 @@ $$
 A simple squared Euclidean comparison is:
 
 $$
-d^2(X,C)
-=
+d^2(X,C)=
 \sum_{i=1}^{L}(x_i-c_i)^2
 $$
 
@@ -845,8 +841,7 @@ This is analogous to assigning intelligence a structural address.
 The address may be:
 
 $$
-A
-=
+A =
 (Domain,
 Metric,
 Tree,
@@ -1145,8 +1140,7 @@ One useful future measurement is the amount of memory required after Folding rel
 Define:
 
 $$
-\rho_f
-=
+\rho_f =
 \frac{M_{\text{folded}}}
      {M_{\text{raw}}}
 $$
@@ -1159,8 +1153,7 @@ where:
 A corresponding gain is:
 
 $$
-G_f
-=
+G_f =
 \frac{M_{\text{raw}}}
      {M_{\text{folded}}}
 $$
@@ -1182,8 +1175,7 @@ It is:
 A critical distinction is:
 
 $$
-C_{\text{system}}
-=
+C_{\text{system}}=
 C_{\text{fold/update}}
 +
 C_{\text{online}}
@@ -1220,8 +1212,7 @@ For a simple tree-routing system with:
 the metric-comparison component can often be organized approximately as:
 
 $$
-C_{\text{metric}}
-=
+C_{\text{metric}}=
 O(D \cdot B \cdot L)
 $$
 

@@ -449,8 +449,7 @@ Node
 * Introduced the relation:
 
 ```text
-Identity
-=
+Identity=
 Core
 +
 Context
@@ -641,20 +640,17 @@ Established the complementary relationship among:
 Canonical roles:
 
 ```text
-SMSF
-=
+SMSF=
 Canonical Application
 /
 Proof by Construction
 
-CSFR
-=
+CSFR=
 Reusable Structural Mechanism
 /
 Algorithmic Generalization
 
-GFSFUI
-=
+GFSFUI=
 General Framework
 /
 Fold–Unfold Lifecycle

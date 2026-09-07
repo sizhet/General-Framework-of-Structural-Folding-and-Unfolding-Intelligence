@@ -1359,8 +1359,7 @@ Questions include:
 A useful engineering metric is:
 
 $$
-G_f
-=
+G_f =
 \frac{M_{raw}}{M_{folded}}
 $$
 
@@ -1372,8 +1371,7 @@ where:
 A related ratio is:
 
 $$
-\rho_f
-=
+\rho_f =
 \frac{M_{folded}}{M_{raw}}
 $$
 
@@ -1633,16 +1631,14 @@ The governing principle is:
 A simplified expected-cost model is:
 
 $$
-E[C]
-=
+E[C] =
 \sum_i p_i C_i
 $$
 
 For example:
 
 $$
-E[C]
-=
+E[C] =
 p_{CCC}C_{CCC}
 +
 p_{ANN}C_{ANN}

@@ -127,8 +127,7 @@ and show meaningful structural similarity.
 The system may construct a provisional structural center:
 
 $$
-CCC_{\text{candidate}}
-=
+CCC_{\text{candidate}}=
 F(S_1,S_2,S_3)
 $$
 

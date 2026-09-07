@@ -364,8 +364,7 @@ A future experimental metric could estimate how strongly a Fold survives targete
 For example:
 
 $$
-F_s =
-f(
+F_s =f(
 Support,
 CounterEvidence,
 ContextCoverage,
@@ -949,8 +948,7 @@ Structural memory should be measured empirically.
 A useful decomposition is:
 
 $$
-M_{total}
-=
+M_{total}=
 M_{objects}
 +
 M_{fold}
@@ -1043,8 +1041,7 @@ The goal is to measure where structural localization provides practical savings.
 For fixed-length sequence routing, a simple approximation is:
 
 $$
-C_{metric}
-=
+C_{metric}=
 O(D \cdot B \cdot L)
 $$
 

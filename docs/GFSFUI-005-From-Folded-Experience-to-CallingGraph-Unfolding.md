@@ -151,8 +151,7 @@ represent certified programs.
 Then:
 
 $$
-\mathcal{CG}
-=
+\mathcal{CG}=
 \{CG_1,CG_2,\ldots,CG_N\}
 $$
 

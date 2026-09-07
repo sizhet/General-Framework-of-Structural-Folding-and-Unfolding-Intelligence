@@ -614,13 +614,12 @@ and:
 Conceptually:
 
 $$
-Identity_A
-=
+Identity_A =
 Core + Context_A + \Delta_A
 $$
 
 $$
-Identity_B
+Identity_B =
 =
 Core + Context_B + \Delta_B
 $$
@@ -664,8 +663,7 @@ Therefore a structural identity should not be reduced to one abstract label.
 A useful conceptual representation is:
 
 $$
-StructuralMeaning(e)
-=
+StructuralMeaning(e) =
 Identity(e)
 +
 Role(e)
