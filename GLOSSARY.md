@@ -36,6 +36,8 @@ Within GFSFUI, it can be interpreted as:
 
 ## Candidate CCC
 
+CCC is an abbreviation for Common Concept Core.
+
 A provisional Cluster-Central CCC created from limited or newly observed evidence.
 
 A Candidate CCC has not yet reached certified status.
