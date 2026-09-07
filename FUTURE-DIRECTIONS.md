@@ -1368,7 +1368,571 @@ When choosing among future directions, prefer work that does one or more of the 
 
 ---
 
-# 65. Canonical Open Questions
+# 65. Policy-Governed Fold/Unfold Runtime
+
+A major future direction is to turn the general Fold/Unfold framework into a **policy-governed structural runtime**.
+
+The central architectural separation is:
+
+$$
+Structural\ Space
+\neq
+Policy\ Space
+$$
+
+Structural Space represents what the system currently knows, retrieves, localizes, composes, and can potentially unfold.
+
+Policy Space governs how those structural possibilities are used under different goals, risks, costs, users, and runtime conditions.
+
+This suggests a general control relationship:
+
+$$
+\boxed{
+Structural\ Possibility\ Space
+\xrightarrow{Policy}
+Runtime\ Behavior
+}
+$$
+
+Policy may operate throughout the Fold/Unfold lifecycle rather than only at the final decision stage.
+
+Examples include:
+
+$$
+Fold
+\xrightarrow{Policy}
+Accept / Leftover
+$$
+
+$$
+Localization
+\xrightarrow{Policy}
+Top1 / TopK / Multi\text{-}Branch / Escalate
+$$
+
+$$
+Unfold
+\xrightarrow{Policy}
+Delta\ Budget
+$$
+
+$$
+Validation
+\xrightarrow{Policy}
+Certify / Reject / Retest / Escalate
+$$
+
+and:
+
+$$
+Leftover
+\xrightarrow{Policy}
+Ignore / Store / Search / LLM / Human / Grow
+$$
+
+### MET Research Directions
+
+Several concrete MET problems follow from this architecture.
+
+**1. Leftover Management MET**
+
+Develop mechanisms for storing, indexing, clustering, aging, revisiting, and resolving Leftovers.
+
+Repeated Leftovers may become an important source of structural growth:
+
+$$
+Leftover
+\rightarrow
+Repeated\ Difference
+\rightarrow
+Candidate\ Delta
+\rightarrow
+Validation
+\rightarrow
+New\ Structure
+$$
+
+**2. Reliable Structural Coverage MET**
+
+Develop metrics that distinguish genuine coverage improvement from forced Folding.
+
+A useful objective should jointly consider:
+
+$$
+Reliable\ Coverage\uparrow
+$$
+
+$$
+False\ Folding\downarrow
+$$
+
+$$
+Validation\ Success\uparrow
+$$
+
+rather than optimizing only:
+
+$$
+Leftover\ Rate\downarrow
+$$
+
+**3. Adaptive Threshold MET**
+
+Study dynamic policies for Fold acceptance, localization confidence, retrieval width, validation thresholds, and escalation.
+
+Thresholds may depend on:
+
+* domain,
+* risk,
+* evidence quality,
+* runtime state,
+* validation history,
+* user profile.
+
+**4. Policy Profile MET**
+
+The same structural memory may support different operational profiles, such as:
+
+$$
+Policy_{safe}
+$$
+
+$$
+Policy_{exploratory}
+$$
+
+$$
+Policy_{low-cost}
+$$
+
+$$
+Policy_{low-latency}
+$$
+
+$$
+Policy_{high-confidence}
+$$
+
+This enables behavioral adaptation without redefining structural truth.
+
+**5. Unfolding Governance MET**
+
+Study policy control over:
+
+* Core preservation,
+* permitted Delta size,
+* candidate count,
+* search depth,
+* compute budget,
+* validation requirements,
+* rollback conditions.
+
+A key engineering objective is:
+
+$$
+Certified\ Core
++
+Minimal\ Necessary\ Delta
+$$
+
+rather than unrestricted regeneration.
+
+**6. Escalation MET**
+
+Develop policies for deciding when unresolved structure should invoke additional intelligence:
+
+$$
+Leftover
+\rightarrow
+\begin{cases}
+Wider\ Structural\ Search\\
+Specialist\ Brain\ Unit\\
+LLM\\
+External\ Tool\\
+Experiment\\
+Human
+\end{cases}
+$$
+
+Escalation itself can become a structural decision problem.
+
+**7. Policy Learning and Certification**
+
+Runtime policy should eventually become learnable, testable, and certifiable.
+
+Successful policy trajectories may themselves be Folded:
+
+$$
+Runtime\ Experience
+\rightarrow
+Policy\ Fold
+\rightarrow
+Reusable\ Policy\ Structure
+$$
+
+Policy changes should then be validated before promotion into production runtime.
+
+**8. User-Tunable Structural Runtime**
+
+A particularly important engineering direction is to expose a controlled runtime interface through which users can configure:
+
+* Fold thresholds,
+* Leftover tolerance,
+* retrieval width,
+* novelty sensitivity,
+* search budget,
+* Unfold Delta budget,
+* validation strictness,
+* risk profile,
+* cost and latency limits,
+* escalation rules,
+* human-review requirements.
+
+This suggests a shift from primarily modifying model parameters toward:
+
+$$
+\boxed{
+Configure\ the\ Structural\ Runtime
+}
+$$
+
+The underlying Structural Space can remain stable while Policy changes according to user and operational requirements.
+
+### Connection to PDS
+
+Policy Decision System (PDS) provides a natural research direction for implementing this governance layer.
+
+A possible division of responsibility is:
+
+$$
+GFSFUI
+\rightarrow
+Structural\ Possibility\ Space
+$$
+
+$$
+PDS
+\rightarrow
+Policy\ Selection\ and\ Runtime\ Governance
+$$
+
+leading to:
+
+$$
+\boxed{
+Structural\ Intelligence
++
+Policy\ Governance
+\rightarrow
+Controlled\ Intelligence
+}
+$$
+
+This connection opens a substantial engineering space between general Fold/Unfold theory and practical user-controlled intelligent systems.
+
+The long-term objective is not a runtime that always produces an answer.
+
+It is a runtime that can distinguish:
+
+$$
+Known
+$$
+
+from:
+
+$$
+Not\ Yet\ Reliably\ Known
+$$
+
+and can apply explicit policy to determine what should happen next.
+
+That capability may be fundamental to scalable, controllable, and continually evolving Structural Intelligence.
+
+---
+
+## Policy-Governed Fold/Unfold Runtime
+
+A major future direction is to turn the general Fold/Unfold framework into a **policy-governed structural runtime**.
+
+The central architectural separation is:
+
+$$
+Structural\ Space
+\neq
+Policy\ Space
+$$
+
+Structural Space represents what the system currently knows, retrieves, localizes, composes, and can potentially unfold.
+
+Policy Space governs how those structural possibilities are used under different goals, risks, costs, users, and runtime conditions.
+
+This suggests a general control relationship:
+
+$$
+\boxed{
+Structural\ Possibility\ Space
+\xrightarrow{Policy}
+Runtime\ Behavior
+}
+$$
+
+Policy may operate throughout the Fold/Unfold lifecycle rather than only at the final decision stage.
+
+Examples include:
+
+$$
+Fold
+\xrightarrow{Policy}
+Accept / Leftover
+$$
+
+$$
+Localization
+\xrightarrow{Policy}
+Top1 / TopK / Multi\text{-}Branch / Escalate
+$$
+
+$$
+Unfold
+\xrightarrow{Policy}
+Delta\ Budget
+$$
+
+$$
+Validation
+\xrightarrow{Policy}
+Certify / Reject / Retest / Escalate
+$$
+
+and:
+
+$$
+Leftover
+\xrightarrow{Policy}
+Ignore / Store / Search / LLM / Human / Grow
+$$
+
+### MET Research Directions
+
+Several concrete MET problems follow from this architecture.
+
+**1. Leftover Management MET**
+
+Develop mechanisms for storing, indexing, clustering, aging, revisiting, and resolving Leftovers.
+
+Repeated Leftovers may become an important source of structural growth:
+
+$$
+Leftover
+\rightarrow
+Repeated\ Difference
+\rightarrow
+Candidate\ Delta
+\rightarrow
+Validation
+\rightarrow
+New\ Structure
+$$
+
+**2. Reliable Structural Coverage MET**
+
+Develop metrics that distinguish genuine coverage improvement from forced Folding.
+
+A useful objective should jointly consider:
+
+$$
+Reliable\ Coverage\uparrow
+$$
+
+$$
+False\ Folding\downarrow
+$$
+
+$$
+Validation\ Success\uparrow
+$$
+
+rather than optimizing only:
+
+$$
+Leftover\ Rate\downarrow
+$$
+
+**3. Adaptive Threshold MET**
+
+Study dynamic policies for Fold acceptance, localization confidence, retrieval width, validation thresholds, and escalation.
+
+Thresholds may depend on:
+
+* domain,
+* risk,
+* evidence quality,
+* runtime state,
+* validation history,
+* user profile.
+
+**4. Policy Profile MET**
+
+The same structural memory may support different operational profiles, such as:
+
+$$
+Policy_{safe}
+$$
+
+$$
+Policy_{exploratory}
+$$
+
+$$
+Policy_{low-cost}
+$$
+
+$$
+Policy_{low-latency}
+$$
+
+$$
+Policy_{high-confidence}
+$$
+
+This enables behavioral adaptation without redefining structural truth.
+
+**5. Unfolding Governance MET**
+
+Study policy control over:
+
+* Core preservation,
+* permitted Delta size,
+* candidate count,
+* search depth,
+* compute budget,
+* validation requirements,
+* rollback conditions.
+
+A key engineering objective is:
+
+$$
+Certified\ Core
++
+Minimal\ Necessary\ Delta
+$$
+
+rather than unrestricted regeneration.
+
+**6. Escalation MET**
+
+Develop policies for deciding when unresolved structure should invoke additional intelligence:
+
+$$
+Leftover
+\rightarrow
+\begin{cases}
+Wider\ Structural\ Search\\
+Specialist\ Brain\ Unit\\
+LLM\\
+External\ Tool\\
+Experiment\\
+Human
+\end{cases}
+$$
+
+Escalation itself can become a structural decision problem.
+
+**7. Policy Learning and Certification**
+
+Runtime policy should eventually become learnable, testable, and certifiable.
+
+Successful policy trajectories may themselves be Folded:
+
+$$
+Runtime\ Experience
+\rightarrow
+Policy\ Fold
+\rightarrow
+Reusable\ Policy\ Structure
+$$
+
+Policy changes should then be validated before promotion into production runtime.
+
+**8. User-Tunable Structural Runtime**
+
+A particularly important engineering direction is to expose a controlled runtime interface through which users can configure:
+
+* Fold thresholds,
+* Leftover tolerance,
+* retrieval width,
+* novelty sensitivity,
+* search budget,
+* Unfold Delta budget,
+* validation strictness,
+* risk profile,
+* cost and latency limits,
+* escalation rules,
+* human-review requirements.
+
+This suggests a shift from primarily modifying model parameters toward:
+
+$$
+\boxed{
+Configure\ the\ Structural\ Runtime
+}
+$$
+
+The underlying Structural Space can remain stable while Policy changes according to user and operational requirements.
+
+### Connection to PDS
+
+Policy Decision System (PDS) provides a natural research direction for implementing this governance layer.
+
+A possible division of responsibility is:
+
+$$
+GFSFUI
+\rightarrow
+Structural\ Possibility\ Space
+$$
+
+$$
+PDS
+\rightarrow
+Policy\ Selection\ and\ Runtime\ Governance
+$$
+
+leading to:
+
+$$
+\boxed{
+Structural\ Intelligence
++
+Policy\ Governance
+\rightarrow
+Controlled\ Intelligence
+}
+$$
+
+This connection opens a substantial engineering space between general Fold/Unfold theory and practical user-controlled intelligent systems.
+
+The long-term objective is not a runtime that always produces an answer.
+
+It is a runtime that can distinguish:
+
+$$
+Known
+$$
+
+from:
+
+$$
+Not\ Yet\ Reliably\ Known
+$$
+
+and can apply explicit policy to determine what should happen next.
+
+That capability may be fundamental to scalable, controllable, and continually evolving Structural Intelligence.
+
+---
+
+# 66. Canonical Open Questions
 
 Key open questions include:
 
@@ -1392,7 +1956,7 @@ Key open questions include:
 
 ---
 
-# 66. Canonical Research Loop
+# 67. Canonical Research Loop
 
 Future work should follow:
 
@@ -1426,7 +1990,7 @@ This is both a system architecture and a research method.
 
 ---
 
-# 67. Final Perspective
+# 68. Final Perspective
 
 The most important future direction is not simply to add more algorithms.
 
