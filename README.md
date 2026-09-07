@@ -993,13 +993,15 @@ General-Framework-of-Structural-Folding-and-Unfolding-Intelligence/
 ├── START-HERE.md
 ├── CONTENTS.md
 │
-├── GFSFUI-001-General-Framework-of-Structural-Folding-and-Unfolding-Intelligence.md
-├── GFSFUI-002-Generic-Structural-Folding-from-Individuals-to-Structural-Memory.md
-├── GFSFUI-003-Structural-Search-Counter-Evidence-and-Continual-Structural-Growth.md
-├── GFSFUI-004-Sparse-Data-Intelligence-and-3-Cat-Structural-Learning.md
-├── GFSFUI-005-From-Folded-Experience-to-CallingGraph-Unfolding.md
-├── GFSFUI-006-Local-UTN-Context-Preserving-Unification-and-Fold-Unfold-Identity.md
-├── GFSFUI-007-Three-Canonical-Demonstrations-and-Research-Roadmap.md
+├── docs/
+│   ├── GFSFUI-001-General-Framework-of-Structural-Folding-and-Unfolding-Intelligence.md
+│   ├── GFSFUI-002-Generic-Structural-Folding-from-Individuals-to-Structural-Memory.md
+│   ├── GFSFUI-003-Structural-Search-Counter-Evidence-and-Continual-Structural-Growth.md
+│   ├── GFSFUI-004-Sparse-Data-Intelligence-and-3-Cat-Structural-Learning.md
+│   ├── GFSFUI-005-From-Folded-Experience-to-CallingGraph-Unfolding.md
+│   ├── GFSFUI-006-Local-UTN-Context-Preserving-Unification-and-Fold-Unfold-Identity.md
+│   ├── GFSFUI-007-Three-Canonical-Demonstrations-and-Research-Roadmap.md
+│   └── GFSFUI-008-Explicit-Leftover-and-Policy-Governed-Structural-Runtime.m
 │
 ├── figures/
 │   ├── Fig-001-GFSFUI-Grand-Map.png
