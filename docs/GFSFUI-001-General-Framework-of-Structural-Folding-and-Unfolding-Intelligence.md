@@ -88,6 +88,12 @@ It is defined by a reusable organization of structural intelligence.
 
 ---
 
+![Fig-001 — GFSFUI Grand Map](../figures/Fig-001-GFSFUI-Grand-Map.png)
+
+*Fig-001 — GFSFUI Grand Map. A high-level view of the General Framework of Structural Folding and Unfolding Intelligence, connecting structural representation, Folding, localized intelligence, search, Unfolding, validation, and continual structural growth.*
+
+---
+
 # 2. Structural Folding and Structural Unfolding
 
 ## 2.1 Structural Folding
