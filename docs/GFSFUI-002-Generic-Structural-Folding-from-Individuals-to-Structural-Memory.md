@@ -154,6 +154,12 @@ They also allow the framework to evolve without requiring every domain to use th
 
 ---
 
+![Fig-002 — Three General Mechanisms of Structural Folding](../figures/Fig-002-Three-General-Mechanisms-of-Structural-Folding.png)
+
+*Fig-002 — Three General Mechanisms of Structural Folding. Generic Structural Representation creates comparable individuals, Generic Structural Folding extracts reusable shared structure and localized difference, and Generic Per-Node Intelligence attaches specialized intelligence to structural locations.*
+
+---
+
 # 4. General Mechanism I — Generic Structural Representation
 
 ## 4.1 GenericContainerStarmap
